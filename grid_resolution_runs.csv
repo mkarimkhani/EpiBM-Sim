@@ -1,0 +1,10 @@
+grid_n,seed,arm,healthy_nadir,final_healthy,final_susceptible,final_resistant,final_total_leukemia,resistant_fraction,cumulative_exposure,guard_trigger_count,treated_intervals,cap_hit,attempted_divisions,accepted_divisions
+16,3101,fixed_historical,36,675,16,89,105,0.8476190476190476,6.0,0,60,False,4676,2964
+16,3102,fixed_historical,36,695,16,0,16,0.0,6.0,0,60,False,4723,3033
+16,3103,fixed_historical,34,312,101,216,317,0.6813880126182965,6.0,0,60,False,4464,2848
+32,3101,fixed_historical,36,609,104,45,149,0.30201342281879195,6.0,0,60,False,4842,3067
+32,3102,fixed_historical,36,527,102,44,146,0.3013698630136986,6.0,0,60,False,5451,3310
+32,3103,fixed_historical,34,391,97,189,286,0.6608391608391608,6.0,0,60,False,5310,3256
+48,3101,fixed_historical,36,604,69,77,146,0.5273972602739726,6.0,0,60,False,5164,3229
+48,3102,fixed_historical,36,658,54,0,54,0.0,6.0,0,60,False,5404,3281
+48,3103,fixed_historical,34,576,29,166,195,0.8512820512820513,6.0,0,60,False,5629,3401

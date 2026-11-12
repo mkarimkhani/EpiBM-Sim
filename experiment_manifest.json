@@ -1,0 +1,49 @@
+{
+  "model_source": "leukemia_hybrid_resistance_v7_os.py copied from supplied v7_os implementation",
+  "seeds_stress": [
+    3101,
+    3102,
+    3103,
+    3104,
+    3105
+  ],
+  "stress_floors": [
+    0.75,
+    0.95,
+    1.0
+  ],
+  "toxicity_grid": [
+    0.5,
+    1.0,
+    2.0
+  ],
+  "toxicity_seeds": [
+    3101,
+    3102,
+    3103,
+    3104,
+    3105
+  ],
+  "grid_seeds": [
+    3101,
+    3102,
+    3103
+  ],
+  "grid_n": [
+    16,
+    32,
+    48
+  ],
+  "physical_unit_limit": "Dimensionless; grid_n alters discretization of support field on unit torus; parameters are not rescaled or calibrated in physical units.",
+  "environment": {
+    "python": "3.11.16 (main, Sep  1 2026, 00:14:22) [GCC 12.2.0]",
+    "platform": "Linux-4.19.0-gvisor-x86_64-with-glibc2.36",
+    "numpy": "1.26.4"
+  },
+  "runtime_seconds": 107.80690169334412,
+  "stress_rows": 30,
+  "toxicity_rows": 30,
+  "grid_rows": 9,
+  "checks": "guard truth table, prior-state-only observation, action window via v7, exposure=sum(action)*dt <= budget, model validate_run; all asserted",
+  "input_provenance": "existing supplied v7 source/tests and seeds from v7 manifest; no external or fabricated data"
+}
