@@ -1,4 +1,26 @@
 # EpiBM-Sim: a reproducible spatial hybrid toy model for feedback-scheduling experiments
+---
+title: 'EpiBM-Sim: A Spatial Hybrid Toy Model for Reproducible Feedback-Scheduling Experiments'
+tags:
+  - Python
+  - Agent-based modeling
+  - Bone marrow niche
+  - Feedback control
+  - Software verification
+authors:
+  - name: Mohsen Karimkhani
+    orcid: 0009-0002-3454-4375
+    corresponding: true
+    email: mohsen.karimkhani@gmail.com
+    affiliation: 1
+affiliations:
+  - name: University of Qom, Iran
+    index: 1
+date: 13 November 2026
+bibliography: paper.bib
+repository: https://github.com/mkarimkhani/EpiBM-Sim
+---
+
 
 ## Summary
 
