@@ -1,4 +1,3 @@
-# EpiBM-Sim: a reproducible spatial hybrid toy model for feedback-scheduling experiments
 ---
 title: 'EpiBM-Sim: A Spatial Hybrid Toy Model for Reproducible Feedback-Scheduling Experiments'
 tags:
@@ -20,7 +19,6 @@ date: 13 November 2026
 bibliography: paper.bib
 repository: https://github.com/mkarimkhani/EpiBM-Sim
 ---
-
 
 ## Summary
 
