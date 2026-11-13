@@ -27,7 +27,6 @@ jobs:
         with:
           journal: joss
           paper-path: paper.md
-          bibliography-path: paper.bib
 
       - name: Upload compiled PDF artifact
         uses: actions/upload-artifact@v4
