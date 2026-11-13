@@ -1,36 +1,36 @@
-   name: Draft Paper
-   on:
-     push:
-       branches:
-         - main
-       paths:
-         - 'paper.md'
-         - 'paper.bib'
-         - '.github/workflows/paper.yml'
-     pull_request:
-       paths:
-         - 'paper.md'
-         - 'paper.bib'
-         - '.github/workflows/paper.yml'
-     workflow_dispatch:
+name: Draft Paper
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'paper.md'
+      - 'paper.bib'
+      - '.github/workflows/paper.yml'
+  pull_request:
+    paths:
+      - 'paper.md'
+      - 'paper.bib'
+      - '.github/workflows/paper.yml'
+  workflow_dispatch:
 
-   jobs:
-     paper:
-       name: Compile JOSS Paper Draft
-       runs-on: ubuntu-latest
-       steps:
-         - name: Checkout repository
-           uses: actions/checkout@v4
+jobs:
+  paper:
+    name: Compile JOSS Paper Draft
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-         - name: Build draft paper
-           uses: openjournals/openjournals-draft-action@v1
-           with:
-             paper-path: paper.md
-             bibliography-path: paper.bib
+      - name: Build draft paper
+        uses: openjournals/openjournals-draft-action@v1.0
+        with:
+          journal: joss
+          paper-path: paper.md
+          bibliography-path: paper.bib
 
-         - name: Upload compiled PDF artifact
-           uses: actions/upload-artifact@v4
-           with:
-             name: joss-paper-draft
-             path: paper.pdf
-
+      - name: Upload compiled PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: joss-paper-draft
+          path: paper.pdf
